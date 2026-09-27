@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <meta name="description" content="Privacy Policy for ARD App, an independent ration shop reporting tool." />
+    <title>Privacy Policy | ARD App</title>
+    <style>
+      :root {
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        line-height: 1.65;
+        color: #1c2823;
+        background: #f7f9f7;
+      }
+
+      body { margin: 0; }
+      main { max-width: 46rem; margin: 0 auto; padding: 2.5rem 1.25rem 5rem; }
+      h1, h2 { line-height: 1.2; letter-spacing: -0.025em; }
+      h1 { font-size: clamp(2rem, 5vw, 2.75rem); margin: 0 0 0.25rem; }
+      h2 { font-size: 1.3rem; margin: 2.25rem 0 0.75rem; }
+      p, li { max-width: 70ch; }
+      ul { padding-left: 1.4rem; }
+      li + li { margin-top: 0.4rem; }
+      a { color: #116347; }
+      a:focus-visible { outline: 2px solid #116347; outline-offset: 3px; }
+      .eyebrow { color: #4c6859; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; }
+      .date { color: #516459; margin-top: 0; }
+      .notice { border-left: 3px solid #197754; background: #eaf3ed; padding: 0.85rem 1rem; }
+      @media (prefers-color-scheme: dark) {
+        :root { color: #e8efe9; background: #101914; }
+        a { color: #7bd5a8; }
+        a:focus-visible { outline-color: #7bd5a8; }
+        .eyebrow, .date { color: #a6c4ae; }
+        .notice { background: #193527; border-color: #66b788; }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="eyebrow">ARD App</p>
+      <h1>Privacy Policy</h1>
+      <p class="date">Last updated: 27 September 2026</p>
+
+      <p>
+        This policy explains how ARD App, developed by Sajarin M, handles information when FPS
+        owners use the Android application. ARD App is an independent tool and is not affiliated
+        with or endorsed by the Government of Kerala.
+      </p>
+
+      <h2>Information used by the app</h2>
+      <ul>
+        <li>
+          <strong>Account and access:</strong> An administrator creates accounts. Email addresses,
+          authentication records, account identifiers, FPS assignments, and access permissions are
+          processed by Supabase so that users can sign in and see their assigned shops. The app
+          does not offer public registration. Supabase handles passwords; ARD App does not store
+          plaintext passwords in its own database.
+        </li>
+        <li>
+          <strong>Government reports:</strong> The app requests stock, transaction, ration-card,
+          and related reports directly from the
+          <a href="https://epos.kerala.gov.in/">Kerala ePoS portal</a>. Requests can include
+          district, office, FPS, date, and ration-card identifiers. The portal receives these
+          requests and the device's network address. Report contents are displayed and analyzed
+          on the device; ARD App does not maintain a separate server copy of beneficiary reports.
+        </li>
+        <li>
+          <strong>On-device storage:</strong> The app saves the sign-in session, access status,
+          preferences, ration-card search history, and selected monthly reports on the device.
+          Ration-card details and pending-card scan results are kept in memory rather than saved
+          as report caches. Signing out clears the session, access status, and saved report cache;
+          preferences and search history can remain on that device. Users can clear search history
+          in the app. Uninstalling the app removes its local data.
+        </li>
+        <li>
+          <strong>Diagnostics:</strong> The release app uses Sentry to receive JavaScript errors
+          and report-processing failures. Events can contain error messages, device context,
+          breadcrumbs, and report request details such as FPS and ration-card identifiers. Sentry
+          may process the device's network address. The app does not intentionally attach complete
+          report contents or set a Sentry user identity. Session replay and performance tracing
+          are disabled.
+        </li>
+      </ul>
+
+      <h2>How information is used and shared</h2>
+      <p>
+        Account information is used to authenticate users and limit app access to assigned FPSs.
+        Report requests are used to show and analyze the selected ePoS data. Diagnostic
+        events are used to identify and fix failures. The services involved are Supabase for
+        authentication and access records, Kerala ePoS for report requests, and Sentry for
+        diagnostics. ARD App does not use advertising SDKs or sell personal data.
+      </p>
+      <p>
+        This policy page is hosted on GitHub Pages. GitHub may log a visitor's network address
+        for site security when the page is opened.
+      </p>
+
+      <h2>Security, retention, and deletion</h2>
+      <p>
+        Network requests use HTTPS. Access to Supabase records is restricted to the signed-in
+        user's account and assigned FPSs. Report caches and saved sessions remain on the device
+        until they are cleared as described above. Account and assignment records remain in
+        Supabase while access is needed; diagnostic records remain subject to Sentry's configured
+        retention settings.
+      </p>
+      <p>
+        To request deletion of an ARD App account and its associated access records, email
+        <a href="mailto:sajarinm@gmail.com">sajarinm@gmail.com</a>. We will verify the request
+        before deleting the account. Deleting an ARD App account does not alter records held by
+        the Kerala ePoS portal. Locally saved preferences and search history can be removed by
+        clearing the app's data or uninstalling it.
+      </p>
+
+      <h2>Children</h2>
+      <p>ARD App is intended for FPS owners and is not directed to children.</p>
+
+      <h2>Changes and contact</h2>
+      <p>
+        This policy may change when the app or its data practices change. The updated text and
+        revision date will appear on this page. For privacy questions, contact Sajarin M at
+        <a href="mailto:sajarinm@gmail.com">sajarinm@gmail.com</a>.
+      </p>
+
+      <p class="notice">
+        ARD App is an independent tool. For official figures, verify the information against the
+        <a href="https://epos.kerala.gov.in/">Kerala ePoS portal</a>.
+      </p>
+    </main>
+  </body>
+</html>
